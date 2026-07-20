@@ -1,0 +1,172 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+    background: linear-gradient(135deg, #9466ea, #a24b7c);
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+body.dark {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+/* Example for your converter box */
+.card {
+  background: #f5f5f5;
+}
+
+body.dark .card {
+  background: #1e1e1e;
+}
+#darkToggle{
+    border-radius: 25%;
+    background-color: gray;
+}
+
+.app {
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+h2 {
+  color: black;
+  margin-bottom: 20px;
+}
+
+.card {
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.input-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+label {
+  font-weight: 600;
+  margin-bottom: 5px;
+  display: block;
+}
+
+input, select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.row img {
+  width: 40px;
+}
+
+@media (max-width: 400px) 
+{
+  .card {
+    width: 100%;
+  }
+
+  .row {
+    flex-direction: column;
+  }
+}
+
+.swap {
+  text-align: center;
+  margin: 10px 0;
+}
+
+.swap button {
+  background: #eee;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+#convertBtn {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  background: #0ce710;
+  color: white;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#convertBtn:hover {
+  background: #8bf707;
+}
+
+.result {
+  margin-top: 20px;
+}
+
+.result h3 {
+  font-size: 24px;
+  color: #fd0707;
+}
+
+.result p {
+  color: gray;
+  font-size: 14px;
+}
+
+.loader {
+    margin: 15px auto;
+    border: 5px solid #eee;  
+    border-top: 5px solid #179f0b; / visible blue */
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.history {
+  margin-top: 15px;
+  background: #101010;
+  padding: 10px;
+  border-radius: 10px;
+  max-height: 150px;
+  overflow-y: auto;
+}
+
+.history-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.history li {
+  list-style: none;
+  padding: 5px;
+  border-bottom: 1px solid #ddd;
+  font-size: 14px;
+}

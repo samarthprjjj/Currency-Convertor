@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Currency Converter</title>
+  <link rel="stylesheet" href="currencyfinal.css">
+</head>
+<body>
+
+<div class="app">
+  <h2>💱 Currency Converter</h2>
+
+  <div class="card">
+
+    <button id="darkToggle"> Dark Mode 🌙</button>
+
+    <div class="input-group">
+      <label>Amount</label>
+      <input type="number" id="amount" placeholder="Enter amount">
+    </div>
+
+    <div class="input-group">
+      <label>From</label>
+      <div class="row">
+        <img id="fromFlag">
+        <select id="fromCurrency"></select>
+      </div>
+    </div>
+
+    <div class="swap">
+      <button id="swapBtn">🔄</button>
+    </div>
+
+    <div class="input-group">
+      <label>To</label>
+      <div class="row">
+        <img id="toFlag">
+        <select id="toCurrency"></select>
+      </div>
+    </div>
+
+    <button id="convertBtn">Convert</button>
+
+    <div id="loader" class="loader" style="display:none;"></div>
+
+    <div class="result">
+      <h3 id="resultid">0.00</h3>
+      <p id="rateid"></p>
+    </div>
+
+    <div class="history">
+    <div class="history-header">
+      <h4>History</h4>
+      <button id="clearHistory">Clear</button>
+    </div>
+    <ul id="historyList"></ul>
+  </div>
+
+    
+  </div>
+</div>
+
+<script src="currencyfinal.js"></script>
+</body>
+</html>
