@@ -1,10 +1,7 @@
 const fromCurrency = document.getElementById("fromCurrency");
 const toCurrency = document.getElementById("toCurrency");
 const amount = document.getElementById("amount");
-const historyList = document.getElementById("historyList");
 const clearBtn = document.getElementById("clearHistory");
-
-let history = JSON.parse(localStorage.getItem("history")) || [];
 
 const result = document.getElementById("resultid");
 const rateText = document.getElementById("rateid");
@@ -111,39 +108,7 @@ finally{
     loader.style.display = "none";
 
 }
-
-
 }
-
-function addToHistory(amount, from, to, converted) {
-  const entry = `${amount} ${from} → ${converted} ${to}`;
-
-  history.push(entry);
-
-  // limit history (last 10)
-  if (history.length > 10) history.shift();
-
-  localStorage.setItem("history", JSON.stringify(history));
-
-  displayHistory();
-}
-
-function displayHistory() {
-  historyList.innerHTML = "";
-
-  history.slice().reverse().forEach(item => {
-    const li = document.createElement("li");
-    li.innerText = item;
-    historyList.appendChild(li);
-  });
-}
-
-clearBtn.addEventListener("click", () => {
-  localStorage.removeItem("history");
-  history = [];
-  displayHistory();
-});
-
 
 // here swapping
 swapBtn.addEventListener("click", () => {
