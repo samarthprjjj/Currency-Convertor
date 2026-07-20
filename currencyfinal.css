@@ -151,7 +151,8 @@ input, select {
 
 .history {
   margin-top: 15px;
-  background: yellow;
+  background: black;
+  color: white;
   padding: 10px;
   border-radius: 10px;
   max-height: 150px;
