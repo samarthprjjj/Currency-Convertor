@@ -163,7 +163,7 @@ input, select {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: yellow;
+  background: white;
 }
 
 .history li {
@@ -171,5 +171,5 @@ input, select {
   padding: 5px;
   border-bottom: 1px solid #ddd;
   font-size: 14px;
-  background: red;
+  background: white;
 }
