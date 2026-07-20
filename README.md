@@ -22,6 +22,9 @@ How It Works:
    Current exchange rate
    Country flags
 6. Stores last 5 conversions for quick reuse or refrence.
+  
+Live Demo:
+https://samarthprjjj.github.io/Currency-Convertor/
 
 Author:
 Samarth Prajapat
