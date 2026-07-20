@@ -149,27 +149,5 @@ input, select {
     100% { transform: rotate(360deg); }
 }
 
-.history {
-  margin-top: 15px;
-  background: black;
-  color: white;
-  padding: 10px;
-  border-radius: 10px;
-  max-height: 150px;
-  overflow-y: auto;
-}
 
-.history-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: white;
-}
-
-.history li {
-  list-style: none;
-  padding: 5px;
-  border-bottom: 1px solid #ddd;
-  font-size: 14px;
-  background: white;
-}
+ 
