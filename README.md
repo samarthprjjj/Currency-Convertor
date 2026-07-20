@@ -4,9 +4,8 @@ A modern and responsive Currency Converter Web App that provides real-time excha
 Features:
 1. Real-Time Currency Conversion using Fetch API.
 2. Dark Mode Toggle for better user-interfae.
-3. Last 5 Conversions History (quick access to recent results).
-4. Country Flags display for selected currencies.
-5. Current Exchange Rate display.
+3. Country Flags display for selected currencies.
+4. Current Exchange Rate display.
 
 Tech Stack:
 Frontend: HTML, CSS, JavaScript
@@ -21,7 +20,7 @@ How It Works:
    Converted amount
    Current exchange rate
    Country flags
-6. Stores last 5 conversions for quick reuse or refrence.
+
   
 Live Demo:
 https://samarthprjjj.github.io/Currency-Convertor/
